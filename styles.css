@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+header {
+
+}
+
+.navigation {
+    width: 100%;
+    height: 10vh;
+    
+}
+
+.navigation-links {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+/* 
+/* .navigation li a {
+    width: 30px;
+    height: 20px;
+    border: 1px chartreuse solid;
+} */
+
+.navigation-item a {
+    display: block;
+    width: auto;
+    height: 50px;
+    padding: 20px;
+    margin-top: 12px;
+    text-align: center;
+    vertical-align: baseline;
+    /* border: 1px chartreuse solid; */
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.navigation-item a:hover {
+    text-decoration: underline;
+}
+
+.site-hero {
+    height: 90vh;
+    background: url('https://i.redd.it/vyk2ghew3c251.jpg') no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+}
+
+.launch {
+    position: absolute;
+    bottom: 90px;
+    margin-left: 40px;
+}
+.launch p {
+    margin: 20px 0;
+}
+.launch h2{
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+.launch a {
+    margin: 20px 0;
+    border: 1.5px white solid;
+    background-color: none;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 15px 50px;
+    
+}
+
+
+.spacex-logo {
+    width: 75pxpx;
+    height: 75px;
+    float: left;
+    margin-left: 20px;
+}
+
