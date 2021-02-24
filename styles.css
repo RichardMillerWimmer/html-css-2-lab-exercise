@@ -10,16 +10,19 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     text-transform: capitalize;
+    /* letter-spacing: normal; */
 }
 
-header {
-
+.spacex-logo {
+    width: 75pxpx;
+    height: 75px;
+    float: left;
+    margin-left: 20px;
 }
 
 .navigation {
     width: 100%;
     height: 10vh;
-    
 }
 
 .navigation-links {
@@ -27,12 +30,6 @@ header {
     flex-direction: row;
     list-style-type: none;
 }
-/* 
-/* .navigation li a {
-    width: 30px;
-    height: 20px;
-    border: 1px chartreuse solid;
-} */
 
 .navigation-item a {
     display: block;
@@ -41,7 +38,6 @@ header {
     padding: 20px;
     margin-top: 12px;
     text-align: center;
-    vertical-align: baseline;
     /* border: 1px chartreuse solid; */
     text-decoration: none;
     color: white;
@@ -60,6 +56,7 @@ header {
     -moz-background-size: cover;
     -o-background-size: cover;
     position: relative;
+    filter: grayscale(80%) sepia(40%);
 }
 
 .launch {
@@ -68,11 +65,12 @@ header {
     margin-left: 40px;
 }
 .launch p {
-    margin: 20px 0;
+    margin: 20px 0 10px 0;
 }
 .launch h2{
-    margin-top: 20px;
-    margin-bottom: 70px;
+    font-size: 2.5rem;
+    margin-top: 0px;
+    margin-bottom: 60px;
 }
 .launch a {
     margin: 20px 0;
@@ -82,14 +80,40 @@ header {
     font-size: 12px;
     text-decoration: none;
     padding: 15px 50px;
+}
+
+.launch a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.container {
+    display: block;
+    float: right;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
+  
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+    transition: 0.4s;
     
 }
-
-
-.spacex-logo {
-    width: 75pxpx;
-    height: 75px;
-    float: left;
-    margin-left: 20px;
+  
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
 }
-
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
